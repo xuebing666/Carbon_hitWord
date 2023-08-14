@@ -1,5 +1,3 @@
-// import './App.css'
-import Container from './components/Container'
 import { BrowserRouter } from 'react-router-dom';
 import { ReactQueryProvider } from './context/react-query-context'
 import { MantineProvider } from '@mantine/core';
