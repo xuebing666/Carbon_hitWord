@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Navbar, Center, Tooltip, UnstyledButton, createStyles, Stack, rem, Group, Box } from '@mantine/core';
+import { Navbar, Center, Tooltip, UnstyledButton, createStyles, Stack, rem} from '@mantine/core';
 import {
   IconHome2,
   IconDeviceDesktopAnalytics,
@@ -9,8 +9,7 @@ import {
   IconSwitchHorizontal,
 } from '@tabler/icons-react';
 import { MantineLogo } from '@mantine/ds';
-import { Outlet, useNavigate } from 'react-router-dom';
-import Title from '../Title';
+import { useNavigate } from 'react-router-dom';
 
 const useStyles = createStyles((theme) => ({
   link: {
