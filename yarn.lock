@@ -257,7 +257,7 @@
   resolved "https://registry.npmmirror.com/@emotion/memoize/-/memoize-0.8.1.tgz"
   integrity sha512-W2P2c/VRW1/1tLox0mVUalvnWXxavmv/Oum2aPsRcoDJuob75FC3Y8FbpfLwUegRcxINtGUMPq0tFCvYNTBXNA==
 
-"@emotion/react@>=11.9.0":
+"@emotion/react@^11.11.1", "@emotion/react@>=11.9.0":
   version "11.11.1"
   resolved "https://registry.npmmirror.com/@emotion/react/-/react-11.11.1.tgz"
   integrity sha512-5mlW1DquU5HaxjLkfkGN1GA/fvVGdyHURRiX/0FHl2cfIfRxSOfmxEH5YS43edp0OldZrZ+dkBKbngxcNCdZvA==
@@ -455,10 +455,10 @@
   dependencies:
     "@mantine/utils" "6.0.18"
 
-"@mantine/hooks@6.0.18":
-  version "6.0.18"
-  resolved "https://registry.npmmirror.com/@mantine/hooks/-/hooks-6.0.18.tgz"
-  integrity sha512-i9RxEtC+7t5qG5Gn5SqTHkHxH9MSsGi9mQebt/GitX9+d9BVBwYLqutlDlHvb8bvDteuYphX5VWLSnJXT4Pivw==
+"@mantine/hooks@^6.0.19", "@mantine/hooks@6.0.18":
+  version "6.0.19"
+  resolved "https://registry.npmmirror.com/@mantine/hooks/-/hooks-6.0.19.tgz"
+  integrity sha512-YkmuB6kmoenU1PVuE8tLBA+6RJIY9hIsGyIQG1yuPAy6SLWNFT8g2T9YvI/psqsUbVIYGaNEXg8zq42xbxnD8Q==
 
 "@mantine/prism@6.0.18":
   version "6.0.18"
