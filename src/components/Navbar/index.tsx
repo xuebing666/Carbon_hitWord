@@ -1,12 +1,10 @@
-import { useState } from 'react';
+import { FC, useState } from 'react';
 import { Navbar, Center, Tooltip, UnstyledButton, createStyles, Stack, rem} from '@mantine/core';
 import {
   IconHome2,
-  IconDeviceDesktopAnalytics,
   IconCalendarStats,
   IconUser,
-  IconLogout,
-  IconSwitchHorizontal,
+  IconBrandTwitch,
 } from '@tabler/icons-react';
 import { MantineLogo } from '@mantine/ds';
 import { useNavigate } from 'react-router-dom';
@@ -43,7 +41,7 @@ const useStyles = createStyles((theme) => ({
 }));
 
 interface NavbarLinkProps {
-  icon: React.FC<any>;
+  icon: React.FC<unknown>;
   label: string;
   active?: boolean;
   onClick?(): void;
@@ -54,7 +52,7 @@ function NavbarLink({ icon: Icon, label, active, onClick }: NavbarLinkProps) {
   return (
     <Tooltip label={label} position="right" transitionProps={{ duration: 0 }}>
       <UnstyledButton onClick={onClick} className={cx(classes.link, { [classes.active]: active })}>
-        <Icon size="1.2rem" stroke={1.5} />
+        <Icon/>
       </UnstyledButton>
     </Tooltip>
   );
@@ -62,7 +60,7 @@ function NavbarLink({ icon: Icon, label, active, onClick }: NavbarLinkProps) {
 
 const mockdata = [
   { icon: IconHome2, label: 'Home',link:'/home' },
-  { icon: IconDeviceDesktopAnalytics, label: 'Analytics' },
+  { icon: IconBrandTwitch, label: 'form',link:'/form' },
   { icon: IconCalendarStats, label: 'Releases' },
   { icon: IconUser, label: 'Account' ,link:'/profile'},
 ];
@@ -73,8 +71,8 @@ export function NavbarMinimalColored() {
 
   const links = mockdata.map((link, index) => (
     <NavbarLink
-      {...link}
-      key={link.label}
+      icon={link.icon as FC<unknown>}
+      label={link.label}
       active={index === active}
       onClick={() => {
         setActive(index)
@@ -104,8 +102,7 @@ export function NavbarMinimalColored() {
       </Navbar.Section>
       <Navbar.Section>
         <Stack justify="center" spacing={0}>
-          <NavbarLink icon={IconSwitchHorizontal} label="Change account" />
-          <NavbarLink icon={IconLogout} label="Logout" />
+         
         </Stack>
       </Navbar.Section>
     </Navbar>

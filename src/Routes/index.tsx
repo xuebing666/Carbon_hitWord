@@ -2,6 +2,7 @@ import {  Navigate, useRoutes } from "react-router-dom";
 import Home from "../components/Home";
 import Profile from "../components/Profile"
 import Container from "../components/Container"
+import Form from "../components/Form";
 
 export default function Router(){
   return useRoutes([
@@ -20,6 +21,10 @@ export default function Router(){
       {
         path:'profile',
         element:<Profile/>
+      },
+      {
+        path:'form',
+        element:<Form/>
       }]
     },
     

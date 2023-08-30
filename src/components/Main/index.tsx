@@ -1,11 +1,11 @@
-import Tarbar from '../Title'
+import Title from '../Title'
 import Show from '../Show'
 import './index.css'
 
 export default function Main() {
   return (
     <div className='right'>
-      <Tarbar></Tarbar>
+      <Title></Title>
       <Show></Show>
     </div>
   )

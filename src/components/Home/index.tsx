@@ -16,6 +16,7 @@ export default function Home() {
   return (
     <div>
       <div className='cardList'>
+        {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
         {dataArray?.map((item:any)=>{
            return <CardWithStats key={item?.target_id}
             image={item.background_image_url||''} 
